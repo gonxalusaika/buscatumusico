@@ -61,6 +61,8 @@ gulp.task('serve', function() {
 // It will start watching for changes in every .js file.
 // If there's a change, the task 'scripts' defined above will fire.
 gulp.task('default', ['scripts', 'copy-static', 'watch', 'serve']);
+
+gulp.task('deploy', ['scripts', 'copy-static', 'serve']);
  
 // Private Functions
 // ----------------------------------------------------------------------------
